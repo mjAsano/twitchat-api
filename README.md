@@ -12,7 +12,7 @@ uvicorn main:app --reload
 ```
 ## GET
 ```
-$ localhost:8000/channel_id?id=video_id&word=anytext
+$ localhost:8000/channel_id/videos/video_id/search=anytext
 ```
 
 You can check usage on localhost:8000/docs
