@@ -25,7 +25,7 @@ class GetData():
         self.match_word = match_word
 
         
-        df = pd.read_csv(self.loc_out + self.channel_id + '/' + self.video_id + '.csv', error_bad_lines=False)
+        df = pd.read_csv(self.loc_out + self.channel_id + '/' + self.video_id + '.csv', sep='\t', error_bad_lines=False)
         df.columns = ['time','id','msg']
 
         stop_word = match_word

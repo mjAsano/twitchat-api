@@ -31,6 +31,6 @@ async def read_videos(channel_id):
 
 
 @app.get("/{channel_id}/videos/{videoid}/")
-async def read_id(channel_id, videoid, search: str = "바보"):
+async def read_id(channel_id, videoid, search: str = ""):
     return {"data": data.get_chat_data(channel_id, videoid, search)}
 
